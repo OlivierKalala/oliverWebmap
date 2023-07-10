@@ -611,14 +611,14 @@ button.btn-settings:active {
   var mouse_position = new ol.control.MousePosition();
   map.addControl(mouse_position);
 
-/*var overview = new ol.control.OverviewMap({
+var overview = new ol.control.OverviewMap({
 view: view_ov, 
 collapseLabel:'O', 
 label: 'O',
 layers:[OSM]
-});*/
+});
 
-	//map.addControl(overview);
+map.addControl(overview);
 
   var full_sc = new ol.control.FullScreen({label:'F'});
   map.addControl(full_sc);
